@@ -1,0 +1,20 @@
+{
+  "data": [
+    {
+      "biomes": "$WATER",
+      "weight": 0.0
+    },
+    {
+      "biomes": "($HOT \u0026 $DRY \u0026 $SANDY)"
+    },
+    {
+      "biomes": "$MESA"
+    }
+  ],
+  "metadata": {
+    "title": "Desert",
+    "description": [
+      "Desert"
+    ]
+  }
+}

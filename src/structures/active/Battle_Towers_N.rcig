@@ -1,0 +1,645 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "BattleTowersNLoot",
+  "items": [
+    {
+      "weight": 0.12706157565116882,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "minecraft:spawn_egg",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "EntityTag": {
+              "nbtType": "compound",
+              "nbt": {
+                "id": {
+                  "nbtType": "string",
+                  "nbt": "babymobs:babycreeper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.08515378087759018,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "minecraft:spawn_egg",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "EntityTag": {
+              "nbtType": "compound",
+              "nbt": {
+                "id": {
+                  "nbtType": "string",
+                  "nbt": "primitivemobs:trollager"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.11158588528633118,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "mowziesmobs:spawn_egg",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "EntityTag": {
+              "nbtType": "compound",
+              "nbt": {
+                "id": {
+                  "nbtType": "string",
+                  "nbt": "mowziesmobs:ferrous_wroughtnaut"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.0976562350988388,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "minecraft:spawn_egg",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "EntityTag": {
+              "nbtType": "compound",
+              "nbt": {
+                "id": {
+                  "nbtType": "string",
+                  "nbt": "primitivemobs:bewitched_tome"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.0472542829811573,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "minecraft:spawn_egg",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "EntityTag": {
+              "nbtType": "compound",
+              "nbt": {
+                "id": {
+                  "nbtType": "string",
+                  "nbt": "minecraft:wither_skeleton"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.05511390045285225,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "minecraft:spawn_egg",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "EntityTag": {
+              "nbtType": "compound",
+              "nbt": {
+                "id": {
+                  "nbtType": "string",
+                  "nbt": "primitivemobs:blazing_juggernaut"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.0472542829811573,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "minecraft:spawn_egg",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "EntityTag": {
+              "nbtType": "compound",
+              "nbt": {
+                "id": {
+                  "nbtType": "string",
+                  "nbt": "minecraft:blaze"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.0403180830180645,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "minecraft:spawn_egg",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "EntityTag": {
+              "nbtType": "compound",
+              "nbt": {
+                "id": {
+                  "nbtType": "string",
+                  "nbt": "primitivemobs:harpy"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.0639861449599266,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "minecraft:spawn_egg",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "EntityTag": {
+              "nbtType": "compound",
+              "nbt": {
+                "id": {
+                  "nbtType": "string",
+                  "nbt": "primitivemobs:harpy"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.0403180830180645,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "minecraft:spawn_egg",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "EntityTag": {
+              "nbtType": "compound",
+              "nbt": {
+                "id": {
+                  "nbtType": "string",
+                  "nbt": "primitivemobs:goblin"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.028885602951049805,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "mowziesmobs:spawn_egg",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "EntityTag": {
+              "nbtType": "compound",
+              "nbt": {
+                "id": {
+                  "nbtType": "string",
+                  "nbt": "mowziesmobs:lantern"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.0403180830180645,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "minecraft:spawn_egg",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "EntityTag": {
+              "nbtType": "compound",
+              "nbt": {
+                "id": {
+                  "nbtType": "string",
+                  "nbt": "primitivemobs:skeleton_warrior"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.028885602951049805,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "minecraft:spawn_egg",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "EntityTag": {
+              "nbtType": "compound",
+              "nbt": {
+                "id": {
+                  "nbtType": "string",
+                  "nbt": "primitivemobs:skeleton_warrior"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.0639861449599266,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "minecraft:mob_spawner",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.0976562350988388,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "minecraft:saddle",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "HorseTweaksUpgrades": {
+              "nbtType": "compound",
+              "nbt": {
+                "FROST_WALKER": {
+                  "nbtType": "byte",
+                  "nbt": 1
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.013752810657024384,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "cyclicmagic:glowing_helmet",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {}
+        }
+      }
+    },
+    {
+      "weight": 0.1639861449599266,
+      "min": 1,
+      "max": 8,
+      "item": {
+        "id": "superblocks:gold_superblock",
+        "damage": 7,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "cyclicmagic:charm_antidote",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {}
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "cyclicmagic:charm_fire",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {}
+        }
+      }
+    },
+    {
+      "weight": 0.0639861449599266,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "cyclicmagic:emerald_helmet",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.05511390045285225,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "cyclicmagic:emerald_chestplate",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.05511390045285225,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "cyclicmagic:emerald_leggings",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.05511390045285225,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "cyclicmagic:emerald_boots",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "extrautils2:ingredients",
+        "damage": 11,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "extrautils2:ingredients",
+        "damage": 12,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.024237150326371193,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "extrautils2:cursedearth",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "extrautils2:ineffableglass",
+        "damage": 1,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "extrautils2:ineffableglass",
+        "damage": 3,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 8,
+      "max": 24,
+      "item": {
+        "id": "extrautils2:simpledecorative",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 12,
+      "item": {
+        "id": "waystones:warp_stone",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "tp:wub_sword",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "tp:obsidian_sword",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.32298368215560913,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "msmlegacy:relic_molten",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "cyclicmagic:ender_tnt_4",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "cyclicmagic:ender_tnt_5",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "superblocks:bigbucket_moilk",
+        "damage": 63,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "totemexpansion:totem_recalling",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "totemexpansion:totem_lava",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 6,
+      "item": {
+        "id": "carbonado:carbonado",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 4,
+      "max": 8,
+      "item": {
+        "id": "toolupgrades:enchanted_advanced_circuit",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 6,
+      "max": 12,
+      "item": {
+        "id": "carbonado:carbonado_shard_molten",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 3,
+      "item": {
+        "id": "playerstorage:apple",
+        "damage": 7,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.013752810657024384,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "advancedcombat:advanced_bow",
+        "damage": 0,
+        "count": 1
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

@@ -1,0 +1,48 @@
+{
+  "data": {
+    "factors": [
+      {
+        "type": "limit",
+        "factor": {
+          "priority": 1.0,
+          "rays": [
+            {
+              "type": "dynpos",
+              "ray": {
+                "type": "bedrock"
+              }
+            },
+            {
+              "type": "move",
+              "ray": {
+                "distance": 128
+              }
+            },
+            {
+              "type": "move",
+              "ray": {
+                "distance": 100,
+                "weight": 1.0
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "match",
+        "factor": {
+          "priority": 1.0300429,
+          "sourceExpression": "!air",
+          "destExpression": "!is:liquid",
+          "requiredConformity": 0.99141634
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Sky Spawn 100 to 128",
+    "description": [
+      "Sky Spawn 100 to 128"
+    ]
+  }
+}

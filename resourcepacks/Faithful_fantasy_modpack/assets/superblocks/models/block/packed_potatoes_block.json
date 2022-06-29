@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "superblocks:blocks/potato_crate",
+        "down": "superblocks:blocks/potato_crate_bottom",
+        "up": "superblocks:blocks/potato_crate_top",
+        "north": "superblocks:blocks/potato_crate",
+        "east": "superblocks:blocks/potato_crate",
+        "south": "superblocks:blocks/potato_crate",
+        "west": "superblocks:blocks/potato_crate"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "superblocks:blocks/apple_crate",
+        "down": "superblocks:blocks/apple_crate_bottom",
+        "up": "superblocks:blocks/apple_crate_top",
+        "north": "superblocks:blocks/apple_crate",
+        "east": "superblocks:blocks/apple_crate",
+        "south": "superblocks:blocks/apple_crate",
+        "west": "superblocks:blocks/apple_crate"
+    }
+}

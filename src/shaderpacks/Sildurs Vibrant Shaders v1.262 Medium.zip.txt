@@ -1,0 +1,5 @@
+#Wed Jun 02 23:25:43 PDT 2021
+waterCB=0.35
+Brightness=0.5
+Contrast=3.0
+waterCG=0.15

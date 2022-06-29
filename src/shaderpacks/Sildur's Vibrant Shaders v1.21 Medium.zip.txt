@@ -1,0 +1,10 @@
+#Sun Jun 16 07:32:27 CDT 2019
+Contrast=3.6
+Godrays_Density=0.575
+uFogDensity=80.0
+waterCG=3.0
+watertex=true
+wFogDensity=150.0
+Brightness=0.2
+Moonlight=0.006
+bloom_strength=0.5

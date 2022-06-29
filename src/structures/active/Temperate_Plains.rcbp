@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "biomes": "$HOT \u0026 $DRY \u0026 $SANDY",
+      "weight": 0.0
+    },
+    {
+      "biomes": "$MESA",
+      "weight": 0.0
+    },
+    {
+      "biomes": "$SAVANNA",
+      "weight": 0.0
+    },
+    {
+      "biomes": "$PLAINS"
+    }
+  ],
+  "metadata": {
+    "title": "Temperate Plains",
+    "description": [
+      "Temperate Plains"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "data": [
+    {
+      "biomes": "$DRY \u0026 $HOT \u0026 $SANDY",
+      "weight": 0.0
+    },
+    {
+      "biomes": "$MESA | $SAVANNA",
+      "weight": 0.0
+    },
+    {
+      "biomes": "$THEMED_TREES \u0026 !($SUPER_BIRCH_TREES | $BIRCH_TREES)"
+    },
+    {
+      "biomes": "$FOREST"
+    },
+    {
+      "biomes": "$CONIFEROUS"
+    },
+    {
+      "biomes": "$ROOFED_TREES"
+    }
+  ],
+  "metadata": {
+    "title": "WOW Human Forest",
+    "description": [
+      "Spawns in thick deep forests."
+    ]
+  }
+}

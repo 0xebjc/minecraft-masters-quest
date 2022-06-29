@@ -1,0 +1,4 @@
+Both Sildur's Vibrant Shaders v1.21 Medium & 
+Sildur's Vibrant Shaders v1.29 Medium have added 
+quarks leaves to animations, see block.properties 
+files in the archive

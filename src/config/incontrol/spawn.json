@@ -1,0 +1,403 @@
+[
+	{
+		"dimension": -1,
+		"mob": "lumen:rad_flame",
+		"mincount": {
+			"amount": 3,
+			"mob": "lumen:rad_flame",
+			"perchunk": false,
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"dimension": -1,
+		"mob": "lumen:rad_flame",
+		"block": "minecraft:nether_brick",
+		"structure": "Fortress",
+		"result": "allow"
+	},
+	{
+		"dimension": -1,
+		"mob": "lumen:rad_flame",
+		"result": "deny"
+	},
+	{
+		"dimension": -1,
+		"mob": "minecraft:blaze",
+		"mincount": {
+			"amount": 3,
+			"mob": "minecraft:blaze",
+			"perchunk": false,
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"dimension": -1,
+		"mob": "minecraft:blaze",
+		"block": "minecraft:nether_brick",
+		"result": "allow"
+	},
+	{
+		"dimension": -1,
+		"mob": "minecraft:blaze",
+		"result": "deny"
+	},
+	{
+		"dimension": -1,
+		"mob": "babymobs:babyblaze",
+		"mincount": {
+			"amount": 6,
+			"mob": "babymobs:babyblaze",
+			"perchunk": false,
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"dimension": -1,
+		"mob": "babymobs:babyblaze",
+		"block": "minecraft:nether_brick",
+		"result": "allow"
+	},
+	{
+		"dimension": -1,
+		"mob": "babymobs:babyblaze",
+		"result": "deny"
+	},
+	{
+		"dimension": -1,
+		"mob": "primitivemobs:haunted_tool",
+		"mincount": {
+			"amount": 6,
+			"mob": "primitivemobs:haunted_tool",
+			"perchunk": false,
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"dimension": -1,
+		"mob": "primitivemobs:haunted_tool",
+		"block": "minecraft:nether_brick",
+		"result": "allow"
+	},
+	{
+		"dimension": -1,
+		"mob": "primitivemobs:haunted_tool",
+		"result": "deny"
+	},
+	{
+		"dimension": -1,
+		"mob": "primitivemobs:bewitched_tome",
+		"mincount": {
+			"amount": 2,
+			"mob": "primitivemobs:bewitched_tome",
+			"perchunk": false,
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"dimension": -1,
+		"mob": "primitivemobs:bewitched_tome",
+		"block": "minecraft:nether_brick",
+		"result": "allow"
+	},
+	{
+		"dimension": -1,
+		"mob": "primitivemobs:bewitched_tome",
+		"result": "deny"
+	},
+	{
+		"dimension": -1,
+		"mob": "eerieentities:nether_knight",
+		"mincount": {
+			"amount": 1,
+			"mob": "eerieentities:nether_knight",
+			"perchunk": false,
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"dimension": -1,
+		"mob": "eerieentities:nether_knight",
+		"block": "minecraft:nether_brick",
+		"structure": "Fortress",
+		"result": "allow"
+	},
+	{
+		"dimension": -1,
+		"mob": "eerieentities:nether_knight",
+		"result": "deny"
+	},
+	{
+		"dimension": -1,
+		"mob": "eerieentities:cursed_armor",
+		"mincount": {
+			"amount": 4,
+			"mob": "eerieentities:cursed_armor",
+			"perchunk": false,
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"dimension": -1,
+		"mob": "eerieentities:cursed_armor",
+		"block": "minecraft:nether_brick",
+		"result": "allow"
+	},
+	{
+		"dimension": -1,
+		"mob": "eerieentities:cursed_armor",
+		"result": "deny"
+	},
+	{
+		"dimension": -1,
+		"mob": "lumen:ember",
+		"mincount": {
+			"amount": 100,
+			"mob": "lumen:ember",
+			"perchunk": false,
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"dimension": -1,
+		"mob": "lumen:ember",
+		"block": "minecraft:lava",
+		"result": "allow"
+	},
+	{
+		"dimension": -1,
+		"mob": "minecraft:ghast",
+		"mincount": {
+			"amount": 1,
+			"mob": "minecraft:ghast",
+			"perchunk": false,
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"dimension": -1,
+		"mob": "primitivemobs:blazing_juggernaut",
+		"mincount": {
+			"amount": 4,
+			"mob": "primitivemobs:blazing_juggernaut",
+			"perchunk": false,
+			"perplayer": false
+		},
+		"result": "deny"
+	},
+	{
+		"dimension": -1,
+		"mob": "primitivemobs:blazing_juggernaut",
+		"block": [
+			"tp:nether_wub_ore",
+			"carbonado:carbonado_ore"
+		],
+		"result": "allow"
+	},
+	{
+		"dimension": -1,
+		"mob": "minecraft:ghast",
+		"block": [
+			"tp:nether_wub_ore",
+			"carbonado:carbonado_ore"
+		],
+		"result": "allow"
+	},
+	{
+		"dimension": -1,
+		"mob": "quark:foxhound",
+		"mincount": {
+			"amount": 10,
+			"mob": "quark:foxhound",
+			"perchunk": false,
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"dimension": -1,
+		"mob": "quark:foxhound",
+		"block": "minecraft:magma",
+		"result": "allow"
+	},
+	{
+		"dimension": -1,
+		"mob": "quark:foxhound",
+		"result": "deny"
+	},
+	{
+		"dimension": [
+			0,
+			1
+		],
+		"mob": "lumen:psi_firefly",
+		"block": "rhodonite:ore_rhodonite",
+		"result": "allow"
+	},
+	{
+		"dimension": -1,
+		"mob": "primitivemobs:festive_creeper",
+		"mincount": {
+			"amount": 5,
+			"mob": "primitivemobs:festive_creeper",
+			"perchunk": false,
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"dimension": 0,
+		"mob": "minecraft:enderman",
+		"mincount": {
+			"amount": 1,
+			"mob": "minecraft:enderman",
+			"perchunk": false,
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"dimension": 1,
+		"mob": "minecraft:enderman",
+		"mincount": {
+			"amount": 25,
+			"mob": "minecraft:enderman",
+			"perchunk": false,
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"dimension": 1,
+		"mob": "primitivemobs:rocket_creeper",
+		"mincount": {
+			"amount": 1,
+			"mob": "primitivemobs:rocket_creeper",
+			"perchunk": false,
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"dimension": [
+			1,
+			0
+		],
+		"mob": "primitivemobs:void_eye",
+		"mincount": {
+			"amount": 2,
+			"mob": "primitivemobs:void_eye",
+			"perchunk": false,
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"dimension": 1,
+		"mob": "primitivemobs:void_eye",
+		"block": [
+			"minecraft:chorus_plant",
+			"minecraft:chorus_flower",
+			"minecraft:bone_block",
+			"minecraft:bedrock"
+		],
+		"result": "allow"
+	},
+	{
+		"dimension": 0,
+		"mob": "primitivemobs:void_eye",
+		"block": [
+			"tp:ender_ore"
+		],
+		"result": "allow"
+	},		
+	{
+		"dimension": 1,
+		"mob": "primitivemobs:void_eye",
+		"result": "deny"
+	},
+	{
+		"dimension": -1,
+		"mob": [
+			"minecraft:enderman",
+			"lumen:psi_firefly"
+		],
+
+		"result": "deny"
+	},
+	{
+		"dimension": 1,
+		"mob": [
+			"minecraft:skeleton",
+			"primitivemobs:skeleton_warrior"
+		],
+
+		"result": "deny"
+	},
+	{
+		"dimension": [
+			0,
+			1
+		],
+		"mob": [
+			"primitivemobs:festive_creeper",
+			"minecraft:wither_skeleton",
+			"minecraft:wither",
+			"babymobs:babywither",
+			"babymobs:babywitherskeleton",
+			"tor:small_wither",
+			"lumen:ember",
+			"minecraft:blaze",
+			"babymobs:babyblaze",
+			"primitivemobs:haunted_tool",
+			"primitivemobs:bewitched_tome",
+			"eerieentities:nether_knight",
+			"eerieentities:cursed_armor",
+			"minecraft:ghast", 
+			"primitivemobs:blazing_juggernaut",
+			"quark:foxhound",
+			"primitivemobs:sheepman"
+		],
+		"result": "deny"
+	},
+	{
+		"dimension": [
+			0,
+			-1
+		],
+		"mob": [
+			"primitivemobs:rocket_creeper",
+			"primitivemobs:void_eye"
+		],
+		"result": "deny"
+	},
+	{
+		"dimension": [
+			-1,
+			1
+		],
+		"mob": [
+			"tor:ore_troll",
+			"minecraft:husk",
+			"minecraft:zombie",
+			"minecraft:zombie_villager",
+			"minecraft:zombie_horse",		
+			"minecraft:skeleton_horse",
+			"babymobs:babyzombie",
+			"babymobs:zombiechicken",
+			"lumen:firefly",
+			"eerieentities:wisp",
+			"eerieentities:pumpkin_slime"
+		],
+		"result": "deny"
+	}
+]

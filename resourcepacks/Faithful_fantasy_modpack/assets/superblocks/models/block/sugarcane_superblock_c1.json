@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "superblocks:blocks/beetroot_crate",
+        "down": "superblocks:blocks/beetroot_crate_bottom",
+        "up": "superblocks:blocks/beetroot_crate_top",
+        "north": "superblocks:blocks/beetroot_crate",
+        "east": "superblocks:blocks/beetroot_crate",
+        "south": "superblocks:blocks/beetroot_crate",
+        "west": "superblocks:blocks/beetroot_crate"
+    }
+}

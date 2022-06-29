@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "biomes": "$BIRCH_TREES"
+    },
+    {
+      "biomes": "$CONIFEROUS"
+    },
+    {
+      "biomes": "$FOREST"
+    },
+    {
+      "biomes": "$ROOFED_TREES"
+    },
+    {
+      "biomes": "$SUPER_BIRCH_TREES"
+    }
+  ],
+  "metadata": {
+    "title": "Most Trees",
+    "description": [
+      ""
+    ]
+  }
+}

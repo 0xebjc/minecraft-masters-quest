@@ -1,0 +1,140 @@
+[
+	{
+    	"dimension": -1,
+    	"block": [
+    		"tp:nether_wub_ore",
+    		"carbonado:carbonado_ore"
+    	],
+		"mobs": [
+			{
+				"mob": "minecraft:ghast",
+				"weight": 5,
+				"groupcountmin": 1,
+				"groupcountmax": 1
+			}
+		]
+	},
+	{
+		"dimension": -1,
+    	"block": [
+    		"tp:nether_wub_ore",
+    		"carbonado:carbonado_ore"
+    	],
+		"mobs": [
+			{
+				"mob": "primitivemobs:blazing_juggernaut",
+				"weight": 3,
+				"groupcountmin": 1,
+				"groupcountmax": 3
+			}
+		]
+	},
+	{
+		"dimension": [
+			0,
+			1
+		],
+		"block": "rhodonite:ore_rhodonite",
+		"mobs": [
+			{
+				"mob": "lumen:psi_firefly",
+				"weight": 4,
+				"groupcountmin": 1,
+				"groupcountmax": 2
+			}
+		]
+	},
+	{
+		"dimension": 1,
+		"block": [
+			"minecraft:chorus_plant",
+			"minecraft:chorus_flower",
+			"minecraft:purpur_block",
+			"minecraft:purpur_pillar",
+			"minecraft:bone_block",
+			"minecraft:bedrock"
+		],
+		"mobs": [
+			{
+				"mob": "primitivemobs:void_eye",
+				"weight": 1,
+				"groupcountmin": 1,
+				"groupcountmax": 1
+			}
+		]
+	},
+	{
+		"dimension": 0,
+		"block": "tp:ender_ore",
+		"mobs": [
+			{
+				"mob": "primitivemobs:void_eye",
+				"weight": 1,
+				"groupcountmin": 1,
+				"groupcountmax": 1
+			}
+		]
+	},
+	{
+		"dimension": -1,
+		"block": "minecraft:nether_brick",
+		"structure": "Fortress",
+		"mobs": [
+			{
+				"mob": "lumen:rad_flame",
+				"weight": 1,
+				"groupcountmin": 1,
+				"groupcountmax": 1
+			}
+		]
+	},
+	{
+		"dimension": -1,
+		"block": "minecraft:nether_brick",
+		"mobs": [
+			{
+				"mob": "primitivemobs:bewitched_tome",
+				"weight": 3,
+				"groupcountmin": 1,
+				"groupcountmax": 1
+			}
+		]
+	},
+	{
+		"dimension": -1,
+		"block": "minecraft:nether_brick",
+		"mobs": [
+			{
+				"mob": "primitivemobs:haunted_tool",
+				"weight": 6,
+				"groupcountmin": 1,
+				"groupcountmax": 1
+			}
+		]
+	},
+	{
+		"dimension": -1,
+		"block": "minecraft:nether_brick",
+		"structure": "Fortress",
+		"mobs": [
+			{
+				"mob": "eerieentities:nether_knight",
+				"weight": 3,
+				"groupcountmin": 1,
+				"groupcountmax": 1
+			}
+		]
+	},
+	{
+		"dimension": -1,
+		"block": "minecraft:nether_brick",
+		"mobs": [
+			{
+				"mob": "eerieentities:cursed_armor",
+				"weight": 4,
+				"groupcountmin": 1,
+				"groupcountmax": 1
+			}
+		]
+	}
+]

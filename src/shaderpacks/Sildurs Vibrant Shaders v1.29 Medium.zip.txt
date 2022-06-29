@@ -1,0 +1,15 @@
+#Fri May 14 19:29:17 PDT 2021
+morningFog=true
+Contrast=3.6
+Godrays_Density=0.575
+raytracedShadows=true
+watertex=true
+waterCG=0.0
+waterA=4.0
+shadowDistance=260.0
+waterCB=0.4
+minlight=0.001
+Brightness=0.2
+Moonlight=0.006
+shadowMapResolution=3072
+bloom_strength=0.5

@@ -1,0 +1,56 @@
+{
+  "data": {
+    "factors": [
+      {
+        "type": "limit",
+        "factor": {
+          "priority": 1.0,
+          "rays": [
+            {
+              "type": "dynpos",
+              "ray": {
+                "type": "world_height"
+              }
+            },
+            {
+              "type": "average",
+              "ray": {
+                "up": false,
+                "destExpression": "(blocks:movement \u0026 is:foliage) \u0026 !is:leaves"
+              }
+            },
+            {
+              "type": "dynmove",
+              "ray": {
+                "type": "structure_height",
+                "up": false
+              }
+            },
+            {
+              "type": "move",
+              "ray": {
+                "distance": 0,
+                "weight": 1.0
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "match",
+        "factor": {
+          "priority": 1.0300429,
+          "sourceExpression": "!air",
+          "destExpression": "!is:liquid",
+          "requiredConformity": 0.99141634
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "title": "In Trees",
+    "description": [
+      "Place Structure in Trees"
+    ]
+  }
+}

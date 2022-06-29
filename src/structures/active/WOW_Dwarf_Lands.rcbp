@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+      "biomes": "$HOT \u0026 $DRY \u0026 $SANDY",
+      "weight": 0.0
+    },
+    {
+      "biomes": "$SAVANNA | $MESA | $JUNGLE",
+      "weight": 0.0
+    },
+    {
+      "biomes": "$SUPER_BIRCH_TREES | $BIRCH_TREES",
+      "weight": 0.0
+    },
+    {
+      "biomes": "$ROOFED_TREES | $SWAMP",
+      "weight": 0.0
+    },
+    {
+      "biomes": "$WASTELAND \u0026 $COLD"
+    },
+    {
+      "biomes": "$MOUNTAIN | $HILLS"
+    }
+  ],
+  "metadata": {
+    "title": "WOW Dwarf Lands",
+    "description": [
+      "Spawns in cold mountains and hills."
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "data": [
+    {
+      "biomes": "$WATER",
+      "weight": 0.0
+    },
+    {
+      "biomes": "$MOUNTAIN",
+      "weight": 1.023959755897522
+    },
+    {
+      "biomes": "!$SANDY | !$WASTELAND | !SAVANNA",
+      "weight": 0.0
+    },
+    {
+      "biomes": "$HILLS",
+      "weight": 1.023959755897522
+    },
+    {
+      "biomes": "$COLD | $SNOWY",
+      "weight": 1.023959755897522
+    },
+    {
+      "biomes": ""
+    }
+  ],
+  "metadata": {
+    "title": "Cold Climates",
+    "description": [
+      ""
+    ]
+  }
+}

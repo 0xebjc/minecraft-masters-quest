@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+      "biomes": "$WATER",
+      "weight": 0.0
+    },
+    {
+      "biomes": "$SWAMP \u0026 $COLD"
+    },
+    {
+      "biomes": "$MESA \u0026 $COLD"
+    },
+    {
+      "biomes": "$SAVANNA \u0026 $COLD"
+    },
+    {
+      "biomes": "$WASTELAND \u0026$COLD"
+    },
+    {
+      "biomes": "$MUSHROOM"
+    },
+    {
+      "biomes": "$JUNGLE"
+    }
+  ],
+  "metadata": {
+    "title": "Cold and Dry",
+    "description": [
+      "Cold and Dry"
+    ]
+  }
+}

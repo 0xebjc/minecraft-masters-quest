@@ -1,0 +1,90 @@
+{
+    "pools": [
+        {
+            "name":  "hauntedtool_spawnitem",
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:golden_sword",
+                    "weight": 100
+                },
+                {
+                    "type": "item",
+                    "name": "cyclicmagic:emerald_sword",
+                    "weight": 10
+                },
+                {
+                    "type": "item",
+                    "name": "msmlegacy:relic_pie",
+                    "weight": 8
+                },
+                {
+                    "type": "item",
+                    "name": "tp:emerald_sword",
+                    "weight": 4
+                },
+                {
+                    "type": "item",
+                    "name": "advancedcombat:advanced_emerald_sword",
+                    "weight": 2
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:golden_axe",
+                    "weight": 80
+                },
+                {
+                    "type": "item",
+                    "name": "cyclicmagic:emerald_axe",
+                    "weight": 8
+                },
+                {
+                    "type": "item",
+                    "name": "tp:emerald_axe",
+                    "weight": 4
+                },
+                {
+                    "type": "item",
+                    "name": "tp:golden_battle",
+                    "weight": 60
+                },
+                {
+                    "type": "item",
+                    "name": "tp:diamond_battle",
+                    "weight": 4
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:golden_pickaxe",
+                    "weight": 40
+                },
+                {
+                    "type": "item",
+                    "name": "cyclicmagic:emerald_pickaxe",
+                    "weight": 2
+                },
+                 {
+                    "type": "item",
+                    "name": "tp:emerald_pickaxe",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "tp:golden_multi",
+                    "weight": 20
+                },
+                {
+                    "type": "item",
+                    "name": "tp:diamond_multi",
+                    "weight": 2
+                }, 
+                {
+                    "type": "item",
+                    "name": "tp:emerald_multi",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "biomes": "$FOREST"
+    },
+    {
+      "biomes": "$HILLS"
+    },
+    {
+      "biomes": "$ROOFED_TREES"
+    },
+    {
+      "biomes": "$THEMED_TREES"
+    }
+  ],
+  "metadata": {
+    "title": "Theamed Forrest",
+    "description": [
+      ""
+    ]
+  }
+}

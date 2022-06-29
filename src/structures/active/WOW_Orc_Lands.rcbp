@@ -1,0 +1,31 @@
+{
+  "data": [
+    {
+      "biomes": "$OCEAN",
+      "weight": 0.0
+    },
+    {
+      "biomes": "$WATER",
+      "weight": 0.0
+    },
+    {
+      "biomes": "$COLD",
+      "weight": 0.0
+    },
+    {
+      "biomes": "$MESA"
+    },
+    {
+      "biomes": "$SAVANNA"
+    },
+    {
+      "biomes": "$WASTELAND \u0026 $HOT"
+    }
+  ],
+  "metadata": {
+    "title": "WOW Orc Lands",
+    "description": [
+      "Spawns in hot, dry forests and wastelands."
+    ]
+  }
+}

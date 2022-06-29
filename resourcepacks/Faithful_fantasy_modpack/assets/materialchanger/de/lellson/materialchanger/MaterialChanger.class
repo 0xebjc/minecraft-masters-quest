@@ -1,0 +1,404 @@
+package de.lellson.materialchanger;
+
+import java.lang.reflect.Field;
+import java.util.*;
+import net.minecraft.item.*;
+import net.minecraftforge.common.config.Configuration;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.relauncher.ReflectionHelper;
+
+// Referenced classes of package de.lellson.materialchanger:
+//            ErrorMessenger, ChangerConfig
+
+public class MaterialChanger
+{
+    public static final class Property extends Enum
+    {
+
+        public static Property[] values()
+        {
+            return (Property[])$VALUES.clone();
+        }
+
+        public static Property valueOf(String name)
+        {
+            return (Property)Enum.valueOf(de/lellson/materialchanger/MaterialChanger$Property, name);
+        }
+
+        public boolean equals(String s)
+        {
+            return s.toLowerCase().equals(toString());
+        }
+
+        public String toString()
+        {
+            return super.toString().toLowerCase();
+        }
+
+        public static final Property ARMOR_PROTECTION;
+        public static final Property ARMOR_TOUGHNESS;
+        public static final Property ATTACK_DAMAGE;
+        public static final Property ATTACK_SPEED;
+        public static final Property DURABILITY;
+        public static final Property EFFICIENCY;
+        public static final Property ENCHANTABILITY;
+        public static final Property HARVEST_LEVEL;
+        public static final Property STACKSIZE;
+        private static final Property $VALUES[];
+
+        static 
+        {
+            ARMOR_PROTECTION = new Property("ARMOR_PROTECTION", 0);
+            ARMOR_TOUGHNESS = new Property("ARMOR_TOUGHNESS", 1);
+            ATTACK_DAMAGE = new Property("ATTACK_DAMAGE", 2);
+            ATTACK_SPEED = new Property("ATTACK_SPEED", 3);
+            DURABILITY = new Property("DURABILITY", 4);
+            EFFICIENCY = new Property("EFFICIENCY", 5);
+            ENCHANTABILITY = new Property("ENCHANTABILITY", 6);
+            HARVEST_LEVEL = new Property("HARVEST_LEVEL", 7);
+            STACKSIZE = new Property("STACKSIZE", 8);
+            $VALUES = (new Property[] {
+                ARMOR_PROTECTION, ARMOR_TOUGHNESS, ATTACK_DAMAGE, ATTACK_SPEED, DURABILITY, EFFICIENCY, ENCHANTABILITY, HARVEST_LEVEL, STACKSIZE
+            });
+        }
+
+        private Property(String s, int i)
+        {
+            super(s, i);
+        }
+    }
+
+    public class Entry
+    {
+
+        public Object getObjectFromClass(Class fromClazz, Class clazz)
+        {
+            if(!fromClazz.isInstance(item))
+                return null;
+            Field afield[];
+            int i;
+            int j;
+            afield = fromClazz.getDeclaredFields();
+            i = afield.length;
+            j = 0;
+_L1:
+            if(j >= i)
+                break MISSING_BLOCK_LABEL_96;
+            Field field = afield[j];
+            field.setAccessible(true);
+            Object object = field.get(item);
+            if(clazz.isInstance(object))
+                return object;
+            j++;
+              goto _L1
+            Exception e;
+            e;
+            error.add(line, null);
+            e.printStackTrace();
+            return null;
+        }
+
+        public final Property property;
+        public final Item item;
+        public final double value;
+        public final String line;
+        final MaterialChanger this$0;
+
+        public Entry(Property property, Item item, double value, String line)
+        {
+            this.this$0 = MaterialChanger.this;
+            super();
+            this.property = property;
+            this.item = item;
+            this.value = value;
+            this.line = line;
+        }
+    }
+
+
+    public MaterialChanger()
+    {
+        error = new ErrorMessenger();
+    }
+
+    public void preInit(FMLPreInitializationEvent event)
+    {
+        config = new Configuration(event.getSuggestedConfigurationFile());
+        config.load();
+        configEntries = (new ChangerConfig(this)).load();
+        config.save();
+    }
+
+    public void postInit(FMLPostInitializationEvent event)
+    {
+        entries = toList(configEntries);
+        Iterator iterator = entries.iterator();
+        do
+        {
+            if(!iterator.hasNext())
+                break;
+            Entry entry = (Entry)iterator.next();
+            static class _cls1
+            {
+
+                static final int $SwitchMap$de$lellson$materialchanger$MaterialChanger$Property[];
+
+                static 
+                {
+                    $SwitchMap$de$lellson$materialchanger$MaterialChanger$Property = new int[Property.values().length];
+                    try
+                    {
+                        $SwitchMap$de$lellson$materialchanger$MaterialChanger$Property[Property.ARMOR_PROTECTION.ordinal()] = 1;
+                    }
+                    catch(NoSuchFieldError nosuchfielderror) { }
+                    try
+                    {
+                        $SwitchMap$de$lellson$materialchanger$MaterialChanger$Property[Property.ARMOR_TOUGHNESS.ordinal()] = 2;
+                    }
+                    catch(NoSuchFieldError nosuchfielderror1) { }
+                    try
+                    {
+                        $SwitchMap$de$lellson$materialchanger$MaterialChanger$Property[Property.ATTACK_DAMAGE.ordinal()] = 3;
+                    }
+                    catch(NoSuchFieldError nosuchfielderror2) { }
+                    try
+                    {
+                        $SwitchMap$de$lellson$materialchanger$MaterialChanger$Property[Property.ATTACK_SPEED.ordinal()] = 4;
+                    }
+                    catch(NoSuchFieldError nosuchfielderror3) { }
+                    try
+                    {
+                        $SwitchMap$de$lellson$materialchanger$MaterialChanger$Property[Property.DURABILITY.ordinal()] = 5;
+                    }
+                    catch(NoSuchFieldError nosuchfielderror4) { }
+                    try
+                    {
+                        $SwitchMap$de$lellson$materialchanger$MaterialChanger$Property[Property.EFFICIENCY.ordinal()] = 6;
+                    }
+                    catch(NoSuchFieldError nosuchfielderror5) { }
+                    try
+                    {
+                        $SwitchMap$de$lellson$materialchanger$MaterialChanger$Property[Property.ENCHANTABILITY.ordinal()] = 7;
+                    }
+                    catch(NoSuchFieldError nosuchfielderror6) { }
+                    try
+                    {
+                        $SwitchMap$de$lellson$materialchanger$MaterialChanger$Property[Property.HARVEST_LEVEL.ordinal()] = 8;
+                    }
+                    catch(NoSuchFieldError nosuchfielderror7) { }
+                    try
+                    {
+                        $SwitchMap$de$lellson$materialchanger$MaterialChanger$Property[Property.STACKSIZE.ordinal()] = 9;
+                    }
+                    catch(NoSuchFieldError nosuchfielderror8) { }
+                }
+            }
+
+            switch(_cls1..SwitchMap.de.lellson.materialchanger.MaterialChanger.Property[entry.property.ordinal()])
+            {
+            case 1: // '\001'
+                changeArmor(entry, false);
+                break;
+
+            case 2: // '\002'
+                changeArmor(entry, true);
+                break;
+
+            case 3: // '\003'
+                changeAttackDamage(entry);
+                break;
+
+            case 4: // '\004'
+                changeAttackSpeed(entry);
+                break;
+
+            case 5: // '\005'
+                changeDurability(entry);
+                break;
+
+            case 6: // '\006'
+                changeEfficiency(entry);
+                break;
+
+            case 7: // '\007'
+                changeMaterial(entry, 9, 8);
+                break;
+
+            case 8: // '\b'
+                changeMaterial(entry, 5, -1);
+                break;
+
+            case 9: // '\t'
+                changeStackSize(entry);
+                break;
+            }
+        } while(true);
+    }
+
+    private void changeStackSize(Entry entry)
+    {
+        entry.item.func_77625_d((int)entry.value);
+    }
+
+    private void changeMaterial(Entry entry, int fieldIndexTool, int fieldIndexArmor)
+    {
+        net.minecraft.item.Item.ToolMaterial material = (net.minecraft.item.Item.ToolMaterial)entry.getObjectFromClass(net/minecraft/item/ItemTool, net/minecraft/item/Item$ToolMaterial);
+        if(material == null)
+            material = (net.minecraft.item.Item.ToolMaterial)entry.getObjectFromClass(net/minecraft/item/ItemSword, net/minecraft/item/Item$ToolMaterial);
+        net.minecraft.item.ItemArmor.ArmorMaterial armorMaterial = (net.minecraft.item.ItemArmor.ArmorMaterial)entry.getObjectFromClass(net/minecraft/item/ItemArmor, net/minecraft/item/ItemArmor$ArmorMaterial);
+        boolean flag = false;
+        if(material != null && fieldIndexTool >= 0)
+        {
+            ReflectionHelper.setPrivateValue(net/minecraft/item/Item$ToolMaterial, material, Integer.valueOf((int)entry.value), fieldIndexTool);
+            flag = true;
+        }
+        if(armorMaterial != null && fieldIndexArmor >= 0)
+        {
+            ReflectionHelper.setPrivateValue(net/minecraft/item/ItemArmor$ArmorMaterial, armorMaterial, Integer.valueOf((int)entry.value), fieldIndexArmor);
+            flag = true;
+        }
+        if(!flag)
+            error.add(entry.line, (new StringBuilder()).append("Couldn't find a matching tool material or armor material for the item: ").append(entry.item.getRegistryName()).append(" (Only tools, swords and armor can have a material)").toString());
+    }
+
+    private void changeAttackSpeed(Entry entry)
+    {
+        if(entry.item instanceof ItemSword)
+            error.add(entry.line, "Sorry, but you can't change the attack speed of swords at the moment :(");
+        else
+        if(entry.item instanceof ItemTool)
+            ReflectionHelper.setPrivateValue(net/minecraft/item/ItemTool, (ItemTool)entry.item, Float.valueOf((float)entry.value - 4F), 3);
+        else
+        if(entry.item instanceof ItemHoe)
+            ReflectionHelper.setPrivateValue(net/minecraft/item/ItemHoe, (ItemHoe)entry.item, Float.valueOf((float)entry.value), 0);
+        else
+            error.add(entry.line, (new StringBuilder()).append("The item is not a valid tool: ").append(entry.item.getRegistryName()).append(" (Only tools can have an attack speed value)").toString());
+    }
+
+    private void changeEfficiency(Entry entry)
+    {
+        if(entry.item instanceof ItemTool)
+            ReflectionHelper.setPrivateValue(net/minecraft/item/ItemTool, (ItemTool)entry.item, Float.valueOf((float)entry.value), 1);
+    }
+
+    private void changeAttackDamage(Entry entry)
+    {
+        if(entry.item instanceof ItemSword)
+            ReflectionHelper.setPrivateValue(net/minecraft/item/ItemSword, (ItemSword)entry.item, Float.valueOf((float)entry.value - 1.0F), 0);
+        else
+        if(entry.item instanceof ItemTool)
+            ReflectionHelper.setPrivateValue(net/minecraft/item/ItemTool, (ItemTool)entry.item, Float.valueOf((float)entry.value - 1.0F), 2);
+        else
+            error.add(entry.line, (new StringBuilder()).append("The item is not a valid tool or weapon: ").append(entry.item.getRegistryName()).append(" (Only tools and swords can have an attack damage value)").toString());
+    }
+
+    private void changeDurability(Entry entry)
+    {
+        entry.item.func_77656_e((int)entry.value);
+    }
+
+    private void changeArmor(Entry entry, boolean toughness)
+    {
+        if(entry.item instanceof ItemArmor)
+            ReflectionHelper.setPrivateValue(net/minecraft/item/ItemArmor, (ItemArmor)entry.item, Float.valueOf((float)entry.value), toughness ? 6 : 5);
+        else
+            error.add(entry.line, (new StringBuilder()).append("The item is not a valid armor piece: ").append(entry.item.getRegistryName()).append(" (Only armor pieces can have a protection/toughness value)").toString());
+    }
+
+    private List toList(String array[])
+    {
+        List list = new ArrayList();
+        String as[] = array;
+        int i = as.length;
+        for(int j = 0; j < i; j++)
+        {
+            String line = as[j];
+            line = validate(line);
+            if(line.isEmpty())
+                continue;
+            String values[] = line.split(";");
+            if(values.length >= 3)
+            {
+                Entry entry = transformValues(line, values);
+                if(entry != null)
+                    list.add(entry);
+            } else
+            {
+                error.add(line, (new StringBuilder()).append("Invalid amount of arguments: ").append(values.length).append(" (3 arguments needed! Usage: property;item;value)").toString());
+            }
+        }
+
+        return list;
+    }
+
+    private Entry transformValues(String line, String values[])
+    {
+        Property prop = null;
+        Property aproperty[] = Property.values();
+        int i = aproperty.length;
+        int j = 0;
+        do
+        {
+            if(j >= i)
+                break;
+            Property p = aproperty[j];
+            if(p.equals(values[0]))
+            {
+                prop = p;
+                break;
+            }
+            j++;
+        } while(true);
+        if(prop == null)
+        {
+            error.add(line, (new StringBuilder()).append("Invalid property: ").append(values[0]).append(" (Properties: ARMOR_PROTECTION, ARMOR_TOUGHNESS, ATTACK_DAMAGE, ATTACK_SPEED, DURABILITY, EFFICIENCY, ENCHANTABILITY, HARVEST_LEVEL, STACKSIZE)").toString());
+            return null;
+        }
+        double value;
+        try
+        {
+            value = Double.parseDouble(values[2]);
+            value = Math.min(value, 32767D);
+        }
+        catch(NumberFormatException e)
+        {
+            error.add(line, (new StringBuilder()).append("Invalid value: ").append(values[3]).toString());
+            return null;
+        }
+        ItemStack item = GameRegistry.makeItemStack(values[1], 0, 1, "");
+        if(item == null)
+        {
+            error.add(line, (new StringBuilder()).append("Invalid item: ").append(values[1]).append(" (Format: modid:name)").toString());
+            return null;
+        } else
+        {
+            return new Entry(prop, item.func_77973_b(), value, line);
+        }
+    }
+
+    private String validate(String line)
+    {
+        return line.replaceAll(" ", "");
+    }
+
+    public static final String MODID = "materialchanger";
+    public static final String NAME = "Material Changer";
+    public static final int ARMOR_PROTECTION_INDEX = 5;
+    public static final int ARMOR_TOUGHNESS_INDEX = 6;
+    public static final int TOOL_EFFICIENCY_INDEX = 1;
+    public static final int TOOL_DAMAGE_INDEX = 2;
+    public static final int TOOL_ATTACK_SPEED_INDEX = 3;
+    private static final int HOE_ATTACK_SPEED_INDEX = 0;
+    public static final int SWORD_DAMAGE_INDEX = 0;
+    public static final int MATERIAL_HARVEST_LEVEL_INDEX = 5;
+    public static final int MATERIAL_ENCHANTABILITY_INDEX = 9;
+    private static final int ARMOR_MATERIAL_ENCHANTABILITY_INDEX = 8;
+    public Configuration config;
+    private String configEntries[];
+    private List entries;
+    private ErrorMessenger error;
+
+}
