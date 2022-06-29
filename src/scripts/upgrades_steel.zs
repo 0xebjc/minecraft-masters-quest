@@ -39,7 +39,7 @@ recipes.addShaped(<extrautils2:resonator>, [
 		[<tp:flint_ingot>,		<tp:flint_ingot>,				<tp:flint_ingot>]
 		]);
 
-Crusher.add(<minecraft:redstone>, <minecraft:coal_block>, <extrautils2:ingredients:0>, 0.01f);
+Crusher.add(<minecraft:redstone>, <minecraft:coal_block>, <extrautils2:ingredients:0>, 0.10f);
 
 furnace.remove(<minecraft:iron_ingot>);
 Resonator.add(<minecraft:iron_ingot>, <tp:flint_ingot>, 1500);
