@@ -1,4 +1,5 @@
 import mods.rockytweaks.Anvil;
+import mods.extrautils2.Crusher;
 import mods.extrautils2.Resonator;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
@@ -290,3 +291,89 @@ recipes.addShaped(<cyclicmagic:magic_net>, [
     [<tp:wub_ingot>,                <minecraft:slime>,                                                                                          <tp:wub_ingot>], 
     [<extrautils2:ingredients:12>,  <forge:bucketfilled>.withTag({FluidName: "vasholine", Amount: 1000}).reuse(),                               <extrautils2:ingredients:12>]
     ]);
+
+
+// Apple Tree Recipies
+recipes.remove(<tp:iron_apple>);
+recipes.addShaped(<tp:iron_apple>, [
+    [<minecraft:iron_nugget>,  <minecraft:iron_nugget>,   <minecraft:iron_nugget>],
+    [<minecraft:iron_nugget>,  <minecraft:apple>,         <minecraft:iron_nugget>],
+    [<minecraft:iron_nugget>,  <minecraft:iron_nugget>,   <minecraft:iron_nugget>]
+    ]);
+
+recipes.remove(<minecraft:golden_apple:0>);
+recipes.addShaped(<minecraft:golden_apple:0>, [
+    [<minecraft:gold_nugget>,  <minecraft:gold_nugget>,     <minecraft:gold_nugget>],
+    [<minecraft:gold_nugget>,  <minecraft:apple>,           <minecraft:gold_nugget>],
+    [<minecraft:gold_nugget>,  <minecraft:gold_nugget>,     <minecraft:gold_nugget>]
+    ]);
+
+recipes.remove(<tp:emerald_apple>);
+recipes.addShaped(<tp:emerald_apple>, [
+    [<uncraftingtable:nugget:1>,  <uncraftingtable:nugget:1>,   <uncraftingtable:nugget:1>],
+    [<uncraftingtable:nugget:1>,  <minecraft:apple>,            <uncraftingtable:nugget:1>],
+    [<uncraftingtable:nugget:1>,  <uncraftingtable:nugget:1>,   <uncraftingtable:nugget:1>]
+    ]);
+
+recipes.remove(<tp:diamond_apple>);
+recipes.addShaped(<tp:diamond_apple>, [
+    [<uncraftingtable:nugget:0>,  <uncraftingtable:nugget:0>,   <uncraftingtable:nugget:0>],
+    [<uncraftingtable:nugget:0>,  <minecraft:apple>,            <uncraftingtable:nugget:0>],
+    [<uncraftingtable:nugget:0>,  <uncraftingtable:nugget:0>,   <uncraftingtable:nugget:0>]
+    ]);
+
+recipes.remove(<minecraft:golden_apple:1>);
+recipes.addShaped(<minecraft:golden_apple:1>, [
+    [<minecraft:gold_ingot>,  <minecraft:gold_ingot>,       <minecraft:gold_ingot>],
+    [<minecraft:gold_ingot>,  <minecraft:apple>,            <minecraft:gold_ingot>],
+    [<minecraft:gold_ingot>,  <minecraft:gold_ingot>,       <minecraft:gold_ingot>]
+    ]);
+
+recipes.remove(<appletreesrev:emerald_apple>);
+recipes.addShaped(<appletreesrev:emerald_apple>, [
+    [<minecraft:emerald>,  <minecraft:emerald>,     <minecraft:emerald>],
+    [<minecraft:emerald>,  <minecraft:apple>,       <minecraft:emerald>],
+    [<minecraft:emerald>,  <minecraft:emerald>,     <minecraft:emerald>]
+    ]);
+
+recipes.remove(<cyclicmagic:apple>);
+Crusher.add(<cyclicmagic:apple> * 3, <minecraft:apple>, <cyclicmagic:apple> * 2, 0.50f);
+
+recipes.remove(<appletreesrev:sapling_apple>);
+recipes.addShaped(<appletreesrev:sapling_apple>, [
+    [null,  <ore:itemWaterBucket>.reuse(),  null],
+    [null,  <cyclicmagic:apple>,            null],
+    [null,  <ore:dirt>,                     null]
+    ]);
+
+recipes.addShapeless(<appletreesrev:apple_plant>, [<cyclicmagic:apple>, <ore:boneMeal>]);
+
+recipes.addShaped(<appletreesrev:gapple_plant>, [
+    [<superblocks:pack_:60>,  <superblocks:pack_:60>,           <superblocks:pack_:60>],
+    [<superblocks:pack_:60>,  <appletreesrev:apple_plant>,      <superblocks:pack_:60>],
+    [<superblocks:pack_:60>,  <superblocks:pack_:60>,           <superblocks:pack_:60>]
+    ]);
+
+recipes.addShaped(<appletreesrev:sapling_gapple>, [
+    [null,  <ore:itemWaterBucket>.reuse(),  null],
+    [null,  <appletreesrev:gapple_plant>,   null],
+    [null,  <ore:dirt>,                     null]
+    ]);
+
+recipes.addShaped(<appletreesrev:eapple_plant>, [
+    [<superblocks:pack_:56>,  <superblocks:pack_:56>,           <superblocks:pack_:56>],
+    [<superblocks:pack_:56>,  <appletreesrev:apple_plant>,      <superblocks:pack_:56>],
+    [<superblocks:pack_:56>,  <superblocks:pack_:56>,           <superblocks:pack_:56>]
+    ]);
+
+recipes.addShaped(<appletreesrev:sapling_eapple>, [
+    [null,  <ore:itemWaterBucket>.reuse(),  null],
+    [null,  <appletreesrev:eapple_plant>,   null],
+    [null,  <ore:dirt>,                     null]
+    ]);
+
+recipes.remove(<cyclicmagic:apple_lapis>);
+recipes.addShapeless(<cyclicmagic:apple_lapis>, [<minecraft:apple>, <ore:gemLapis>]);
+
+recipes.remove(<cyclicmagic:food_step>);
+recipes.addShapeless(<cyclicmagic:food_step>, [<minecraft:apple>, <minecraft:slime>]);

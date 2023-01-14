@@ -302,9 +302,9 @@ recipes.addShaped(<minecraft:white_shulker_box>,
 	[<superblocks:pack_:0>,	<superblocks:pack_:0>,		<superblocks:pack_:0>]]);
 
 // Superblock Sponges
-recipes.addShapeless(<superblocks:splonge:0> * 32, 
+recipes.addShapeless(<superblocks:splonge:0> * 64, 
 	[<superblocks:watah_splonge_block:1>]);
-recipes.addShapeless(<superblocks:splonge:1> * 32, 
+recipes.addShapeless(<superblocks:splonge:1> * 64, 
 	[<superblocks:lavah_splonge_block:1>]);
 
 recipes.addShapeless(<minecraft:water_bucket>, 
@@ -319,20 +319,20 @@ recipes.addShapeless(<minecraft:lava_bucket>,
 recipes.addShapeless(<superblocks:bucket_lavah>, 
 	[<superblocks:splonge:1>,<superblocks:bucket_empty>]);
 
-recipes.addShaped(<superblocks:lavah_splonge_block:0>, 
+recipes.addShaped(<superblocks:lavah_splonge_block:0> * 64, 
 	[[netherrackBlockCompressed2,	gravelBlockCompressed2,	netherrackBlockCompressed2],
 	[gravelBlockCompressed2,		cactusBlockCompressed2,	gravelBlockCompressed2],
 	[netherrackBlockCompressed2,	gravelBlockCompressed2,	netherrackBlockCompressed2]]);
 
-recipes.addShaped(<superblocks:watah_splonge_block:0>, 
+recipes.addShaped(<superblocks:watah_splonge_block:0> * 64, 
 	[[woolBlockCompressed2,	sandBlockCompressed2,	woolBlockCompressed2],
 	[sandBlockCompressed2,	cactusBlockCompressed2,	sandBlockCompressed2],
 	[woolBlockCompressed2,	sandBlockCompressed2,	woolBlockCompressed2]]);
 
-recipes.addShapeless(<minecraft:obsidian> * 32, 
+recipes.addShapeless(<minecraft:obsidian> * 64, 
 	[<superblocks:watah_splonge_block:1>,<superblocks:lavah_splonge_block:1>]);
 
-recipes.addShaped(<minecraft:magma> * 32, 
+recipes.addShaped(<minecraft:magma> * 64, 
 	[[<minecraft:stone>,	<minecraft:stone>,						<minecraft:stone>],
 	[<minecraft:stone>,		<superblocks:lavah_splonge_block:1>,	<minecraft:stone>],
 	[<minecraft:stone>,		<minecraft:stone>,						<minecraft:stone>]]);

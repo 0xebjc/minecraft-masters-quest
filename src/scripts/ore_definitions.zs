@@ -20,6 +20,7 @@ val dustRedstone = <ore:dustRedstone>;
 val blockRedstone = <ore:blockRedstone>;
 val dyeBlue = <ore:dyeBlue>;
 val bone = <ore:bone>;
+val boneMeal = <ore:boneMeal>;
 val leather = <ore:leather>;
 val woolWhite = <ore:woolWhite>;
 val woolLightGray = <ore:woolLightGray>;
@@ -171,6 +172,9 @@ fastnerStrap.add(<superblocks:pack_:19>);
 fastnerStrap.add(<uncraftingtable:nugget:3>);
 
 bone.add(<betteranimalsplus:antler>);
+
+boneMeal.add(<minecraft:dye:15>);
+boneMeal.add(<giacomos_fishing_net:itemfishmeal>);
 
 woolWhite.add(<betteranimalsplus:wolf_pelt_snowy>);
 woolLightGray.add(<betteranimalsplus:wolf_pelt_timber>);

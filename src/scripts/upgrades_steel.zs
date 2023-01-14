@@ -49,35 +49,19 @@ Resonator.add(<minecraft:coal_block>, <quark:charcoal_block>, 500);
 Resonator.add(<minecraft:coal_block>, <tp:charcoal_block>, 500);
 
 
-
-
-
 <minecraft:iron_ingot>.displayName= "Steel Ingot";
 <minecraft:iron_block>.displayName= "Steel Block";
 <minecraft:iron_bars>.displayName= "Steel Bars";
 <minecraft:iron_trapdoor>.displayName= "Steel Trap Door";
 <minecraft:iron_door>.displayName= "Steel Door";
-<minecraft:iron_shovel>.displayName= "Steel Shovel";
-<minecraft:iron_pickaxe>.displayName= "Steel Pickaxe";
-<minecraft:iron_axe>.displayName= "Steel Axe";
-<minecraft:iron_sword>.displayName= "Steel Sword";
-<minecraft:iron_hoe>.displayName= "Steel Hoe";
-<minecraft:iron_helmet>.displayName= "Steel Plate Helmet";
-<minecraft:iron_chestplate>.displayName= "Steel Chestplate";
-<minecraft:iron_leggings>.displayName= "Steel Plate Leggings";
-<minecraft:iron_boots>.displayName= "Steel Plate Boots";
 <minecraft:iron_horse_armor>.displayName= "Steel Plate Horse Armor";
 <minecraft:iron_nugget>.displayName= "Steel nugget";
+<minecraft:heavy_weighted_pressure_plate>.displayName= "Weighted Steel Pressure Plate §7(Heavy)§f";
 <minecraft:shears>.displayName= "Steel Shears";
-<minecraft:chainmail_helmet>.displayName= "Steel Chain Helmet";
-<minecraft:chainmail_chestplate>.displayName= "Steel Chain Chestplate";
-<minecraft:chainmail_leggings>.displayName= "Steel Chain Leggings";
-<minecraft:chainmail_boots>.displayName= "Steel Chain Boots";
 <theoneprobe:iron_helmet_probe>.displayName= "Steel Helmet with Probe";
 <extrautils2:simpledecorative:2>.displayName= "Block of Evil Infused Steel";
 <extrautils2:ingredients:17>.displayName= "Evil Infused Steel Ingot";
 <extrautils2:drum:1>.displayName= "Steel Drum";
-
 <hgp:hgppane:1>.displayName= "Horizontal Steel Bars";
 <metalchests:metal_chest:1>.displayName= "Steel Chest";
 <metalchests:minecart_metal_chest:1>.displayName= "Minecart with Steel Chest";
@@ -86,30 +70,62 @@ Resonator.add(<minecraft:coal_block>, <tp:charcoal_block>, 500);
 <metalchests:chest_upgrade:13>.displayName= "Steel to Diamond Chest Upgrade";
 <miscrails:speed_rail>.displayName= "Speed Rail";
 <miscrails:powered_speed_rail>.displayName= "Powered Speed Rail";
-<minecolonies:iron_scimitar>.displayName=  "Curved Steel Sword";
 <quark:iron_button>.displayName=  "Steel Button";
-<quark:iron_rod>.displayName=  "Steel Rod";
 <quark:grate>.displayName=  "Steel Grate";
 <quark:iron_ladder>.displayName=  "Steel Ladder";
-<quark:chain>.displayName=  "Steel Chains";
 <superblocks:pack_:57>.displayName= "Packed Steel Ingots";
 <tp:iron_furnace_block>.displayName= "Steel Furnus";
-<tp:iron_battle>.displayName= "Steel BattleAxe";
-<tp:iron_multi>.displayName= "Steel Paxel";
 <tp:iron_apple>.displayName= "Steel Apple";
-<wolfarmor:chainmail_wolf_armor>.displayName= "Steel Plate Wolf Armor";
-<minecolonies:pirate_chest>.displayName= "Pirate Steel Chain Chest";
-<minecolonies:pirate_shoes>.displayName= "Pirate Steel Chain Boots";
+<mcwbridges:most1>.displayName= "Steel Bridge §7(Middle)§f";
+<mcwbridges:most2>.displayName= "Steel Bridge §7(End)§f";
+<mcwfurnitures:iron_handle>.displayName= "Steel Handlebar";
 
 
 recipes.remove(<tp:chainmail_part>);
 recipes.addShapeless(<tp:chainmail_part> * 9, [<minecraft:iron_ingot>, <tp:stone_hammer>.reuse()]);
 
+<mcwbridges:iron_rod>.displayName=  "Steel Forging Stock";
+recipes.remove(<mcwbridges:iron_rod>);
+furnace.addRecipe(<mcwbridges:iron_rod>, <minecraft:iron_nugget>, 0.15);
+
+<mcwbridges:iron_armrest>.displayName=  "Steel Handrail";
+recipes.remove(<mcwbridges:iron_armrest>);
+recipes.addShaped(<mcwbridges:iron_armrest>, [
+		[null, 					<minecraft:iron_nugget>,	null], 
+		[null, 					<mcwbridges:iron_rod>, 		<minecraft:iron_nugget>], 
+		[<mcwbridges:iron_rod>,	null, 						null]
+		]);
+
+<mcwbridges:iron_platform>.displayName=  "Steel Platform";
+recipes.remove(<mcwbridges:iron_platform>);
+recipes.addShaped(<mcwbridges:iron_platform> * 6, [
+		[<tp:chainmail_part>, 						<tp:chainmail_part>,						<tp:chainmail_part>], 
+		[<tp:chainmail_part>, 						<tp:chainmail_part>, 						<tp:chainmail_part>], 
+		[<minecraft:heavy_weighted_pressure_plate>,	<minecraft:heavy_weighted_pressure_plate>, 	<minecraft:heavy_weighted_pressure_plate>]
+		]);
+
+<quark:chain>.displayName=  "Steel Chain Links §7(Links Minecarts)§f";
+recipes.remove(<quark:chain>);
+recipes.addShaped(<quark:chain>, [
+		[null, 						<minecraft:iron_nugget>,	<minecraft:iron_nugget>], 
+		[<minecraft:iron_nugget>, 	<minecraft:iron_nugget>, 	<minecraft:iron_nugget>], 
+		[<minecraft:iron_nugget>,	<minecraft:iron_nugget>, 	null]
+		]);
+
+<inspirations:rope:1>.displayName=  "Steel Chains";
+recipes.remove(<inspirations:rope:1>);
+recipes.addShaped(<inspirations:rope:1> * 2, [
+		[<minecraft:coal>, 	<minecraft:coal>,	<tp:stone_hammer>.reuse()], 
+		[<quark:chain>, 	<quark:chain>, 		null], 
+		[<quark:chain>,		<quark:chain>, 		<minecraft:anvil>.reuse()]
+		]);
+
+<quark:iron_rod>.displayName=  "Steel Rod §7(Fashioned)§f";
 recipes.remove(<quark:iron_rod>);
-recipes.addShaped(<quark:iron_rod>, [
-		[null, 	null,				null], 
-		[null, 	<ore:chainmail>, 	null], 
-		[null,	<ore:chainmail>, 	null]
+recipes.addShaped(<quark:iron_rod> * 3, [
+		[<ore:chainmail>, 	<mcwbridges:iron_rod>,	<ore:chainmail>], 
+		[<ore:chainmail>, 	<mcwbridges:iron_rod>, 	<ore:chainmail>], 
+		[<ore:chainmail>,	<mcwbridges:iron_rod>, 	<ore:chainmail>]
 		]);
 
 <hotornot:mitts>.displayName=  "Heat Resistant Fire Protection Gloves";
@@ -127,6 +143,7 @@ recipes.addShaped(<cyclicmagic:glove_climb>, [
 		[<ore:slimeball>,	<ore:slimeball>, 	<ore:string>]
 		]);
 
+<tp:iron_battle>.displayName= "Steel BattleAxe";
 recipes.remove(<tp:iron_battle>);
 recipes.addShaped(<tp:iron_battle>, [
 		[<minecraft:iron_ingot>, 	<quark:iron_rod>,	<minecraft:iron_ingot>], 
@@ -161,42 +178,49 @@ recipes.addShaped(<spartanshields:shield_basic_iron>, [
 Anvil.addRecipe(<minecraft:iron_sword>, <minecraft:iron_ingot>, <msmlegacy:relic_candy>, 1);
 
 
-recipes.remove(<minecraft:chainmail_helmet>);
-recipes.remove(<minecraft:chainmail_chestplate>);
-recipes.remove(<minecraft:chainmail_leggings>);
-recipes.remove(<minecraft:chainmail_boots>);
-recipes.remove(<wolfarmor:chainmail_wolf_armor>);
 
+
+
+<minecraft:chainmail_helmet>.displayName= "Steel Chain Helmet";
+recipes.remove(<minecraft:chainmail_helmet>);
 recipes.addShaped(<minecraft:chainmail_helmet>, [
 		[<tp:chainmail_part>,	<ore:leatherHelmet>,	<tp:chainmail_part>],
 		[<tp:chainmail_part>,	<superblocks:tie:2>,	<tp:chainmail_part>],
 		[null,					null,					null]
 		]);
 
+<minecraft:chainmail_chestplate>.displayName= "Steel Chain Chestplate";
+recipes.remove(<minecraft:chainmail_chestplate>);
 recipes.addShaped(<minecraft:chainmail_chestplate>, [
 		[<tp:chainmail_part>,	<superblocks:tie:2>,		<tp:chainmail_part>],
 		[<tp:chainmail_part>,	<ore:leatherChestplate>,	<tp:chainmail_part>],
 		[<tp:chainmail_part>,	<tp:chainmail_part>,		<tp:chainmail_part>]
 		]);
 
+<minecraft:chainmail_leggings>.displayName= "Steel Chain Leggings";
+recipes.remove(<minecraft:chainmail_leggings>);
 recipes.addShaped(<minecraft:chainmail_leggings>, [
 		[<tp:chainmail_part>,	<ore:leatherLeggings>,	<tp:chainmail_part>],
 		[<tp:chainmail_part>,	<superblocks:tie:2>,	<tp:chainmail_part>],
 		[<tp:chainmail_part>,	null,					<tp:chainmail_part>]
 		]);
 
+<minecraft:chainmail_boots>.displayName= "Steel Chain Boots";
+recipes.remove(<minecraft:chainmail_boots>);
 recipes.addShaped(<minecraft:chainmail_boots>, [
 		[null,					null,					null],
 		[<tp:chainmail_part>,	<ore:leatherBoots>,		<tp:chainmail_part>],
 		[<tp:chainmail_part>,	<superblocks:tie:2>,	<tp:chainmail_part>]
 		]);
 
+<minecolonies:pirate_chest>.displayName= "Pirate Steel Chain Chest";
 recipes.addShaped(<minecolonies:pirate_chest>, [
 	[<tp:chainmail_part>,	null,								null],
 	[null,					<minecraft:chainmail_chestplate>,	null],
 	[<tp:chainmail_part>,	<superblocks:tie:2>,				<tp:chainmail_part>]
 	]);
 
+<minecolonies:pirate_shoes>.displayName= "Pirate Steel Chain Boots";
 recipes.addShaped(<minecolonies:pirate_shoes>, [
 	[null,					null,							null],
 	[<tp:chainmail_part>,	<minecraft:chainmail_boots>,	<tp:chainmail_part>],
@@ -210,41 +234,47 @@ recipes.addShaped(<minecraft:bow>, [
 	[null,				<minecraft:stick>,		<minecraft:string>]
 	]);
 
+<minecraft:iron_helmet>.displayName= "Steel Plate Helmet";
 recipes.remove(<minecraft:iron_helmet>);
-recipes.remove(<minecraft:iron_chestplate>);
-recipes.remove(<minecraft:iron_leggings>);
-recipes.remove(<minecraft:iron_boots>);
-
 recipes.addShaped(<minecraft:iron_helmet>, [
 	[<minecraft:iron_ingot>,	<minecraft:chainmail_helmet>,	<minecraft:iron_ingot>],
 	[<minecraft:iron_ingot>,	<superblocks:tie:2>,			<minecraft:iron_ingot>],
 	[null,						null,							null]
 	]);
 
+<minecraft:iron_chestplate>.displayName= "Steel Chestplate";
+recipes.remove(<minecraft:iron_chestplate>);
 recipes.addShaped(<minecraft:iron_chestplate>, [
 	[<minecraft:iron_ingot>,	<superblocks:tie:2>,				<minecraft:iron_ingot>],
 	[<minecraft:iron_ingot>,	<minecraft:chainmail_chestplate>,	<minecraft:iron_ingot>],
 	[<minecraft:iron_ingot>,	<minecraft:iron_ingot>,				<minecraft:iron_ingot>]
 	]);
 
+<minecraft:iron_leggings>.displayName= "Steel Plate Leggings";
+recipes.remove(<minecraft:iron_leggings>);
 recipes.addShaped(<minecraft:iron_leggings>, [
 	[<minecraft:iron_ingot>,	<minecraft:chainmail_leggings>,	<minecraft:iron_ingot>],
 	[<minecraft:iron_ingot>,	<superblocks:tie:2>,			<minecraft:iron_ingot>],
 	[<minecraft:iron_ingot>,	null,							<minecraft:iron_ingot>]
 	]);
 
+<minecraft:iron_boots>.displayName= "Steel Plate Boots";
+recipes.remove(<minecraft:iron_boots>);
 recipes.addShaped(<minecraft:iron_boots>, [
 	[null,						null,							null],
 	[<minecraft:iron_ingot>,	<minecraft:chainmail_boots>,	<minecraft:iron_ingot>],
 	[<minecraft:iron_ingot>,	<superblocks:tie:2>,			<minecraft:iron_ingot>]	
 	]);
 
+<wolfarmor:chainmail_wolf_armor>.displayName= "Steel Plate Wolf Armor";
+recipes.remove(<wolfarmor:chainmail_wolf_armor>);
 recipes.addShaped(<wolfarmor:chainmail_wolf_armor>, [
 		[null,						<superblocks:tie:2>,			<minecraft:iron_ingot>],
 		[<minecraft:iron_ingot>,	<wolfarmor:leather_wolf_armor>,	<minecraft:iron_ingot>],
 		[<minecraft:iron_ingot>,	null,							<minecraft:iron_ingot>]
 		]);
 
+<tp:iron_multi>.displayName= "Steel Paxel";
 recipes.remove(<tp:iron_multi>);
 recipes.addShaped(<tp:iron_multi>, [
 		[<minecraft:iron_axe>, 	<minecraft:iron_shovel>,	<minecraft:iron_pickaxe>], 
@@ -258,7 +288,7 @@ recipes.addShaped(<superblocks:bigbucket_empty>, [
 		[null,						<minecraft:bucket>, null]
 		]);
 
-
+<minecraft:iron_sword>.displayName= "Steel Sword";
 recipes.remove(<minecraft:iron_sword>);
 recipes.addShaped(<minecraft:iron_sword>, [
 		[null, 	<minecraft:iron_ingot>,	null], 
@@ -266,6 +296,7 @@ recipes.addShaped(<minecraft:iron_sword>, [
 		[null,	<quark:iron_rod>, 		null]
 		]);
 
+<minecraft:iron_shovel>.displayName= "Steel Shovel";
 recipes.remove(<minecraft:iron_shovel>);
 recipes.addShaped(<minecraft:iron_shovel>, [
 		[null, 	<minecraft:iron_ingot>,	null], 
@@ -273,6 +304,8 @@ recipes.addShaped(<minecraft:iron_shovel>, [
 		[null,	<quark:iron_rod>, 		null]
 		]);
 
+
+<minecraft:iron_pickaxe>.displayName= "Steel Pickaxe";
 recipes.remove(<minecraft:iron_pickaxe>);
 recipes.addShaped(<minecraft:iron_pickaxe>, [
 		[<minecraft:iron_ingot>, 	<minecraft:iron_ingot>,	<minecraft:iron_ingot>], 
@@ -280,6 +313,8 @@ recipes.addShaped(<minecraft:iron_pickaxe>, [
 		[null,						<quark:iron_rod>, 		null]
 		]);
 
+
+<minecraft:iron_axe>.displayName= "Steel Axe";
 recipes.remove(<minecraft:iron_axe>);
 recipes.addShaped(<minecraft:iron_axe>, [
 		[<minecraft:iron_ingot>, 	<minecraft:iron_ingot>,	null], 
@@ -287,6 +322,7 @@ recipes.addShaped(<minecraft:iron_axe>, [
 		[null,						<quark:iron_rod>, 		null]
 		]);
 
+<minecraft:iron_hoe>.displayName= "Steel Hoe";
 recipes.remove(<minecraft:iron_hoe>);
 recipes.addShaped(<minecraft:iron_hoe>, [
 		[<minecraft:iron_ingot>, 	<minecraft:iron_ingot>,	null], 
@@ -294,6 +330,8 @@ recipes.addShaped(<minecraft:iron_hoe>, [
 		[null,						<quark:iron_rod>, 		null]
 		]);
 
+
+<minecolonies:iron_scimitar>.displayName=  "Curved Steel Sword";
 recipes.addShaped(<minecolonies:iron_scimitar>, [
 	[<minecraft:iron_nugget>,	<minecraft:iron_ingot>,	null],
 	[null,						<minecraft:iron_ingot>,	null],
@@ -326,7 +364,6 @@ HammerCrafting.addRecipe(<sparkshammers:hammer_steel>, [
 ]);
 
 
-/*
 // Guards Craft
 <guardscraft:halberd>.displayName= "Imperial Steel Halberd";
 recipes.remove(<guardscraft:halberd>);
@@ -381,4 +418,3 @@ recipes.addShaped(<guardscraft:knife>, [
 
 
 Anvil.addRecipe(<guardscraft:knife>.anyDamage(), <guardscraft:crown>, <guardscraft:knife>, 1);
-*/

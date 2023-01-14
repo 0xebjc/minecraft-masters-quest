@@ -62,8 +62,8 @@ recipes.remove(<cyclicmagic:sword_slowness>);
 recipes.addShaped("Master_Sword_of_Freezing", <cyclicmagic:sword_slowness>, [
 
     [<msmlegacy:relic_aqueous>, <ionitems:ion_sword>.marked("input_item"), 	<tp:stone_hammer>.reuse()],
-    [<minecraft:packed_ice>,    <minecraft:packed_ice>,  										<torchmaster:frozen_pearl>],
-    [<minecraft:packed_ice>, 	<minecraft:packed_ice>, 										<cyclicmagic:block_anvil_magma>.reuse()]],
+    [<minecraft:packed_ice>,    <minecraft:packed_ice>,  					<torchmaster:frozen_pearl>],
+    [<minecraft:packed_ice>, 	<minecraft:packed_ice>, 					<cyclicmagic:block_anvil_magma>.reuse()]],
     
     function(out, ins, crafting) {
     	var xpLevelCost = 20;
@@ -91,8 +91,8 @@ recipes.remove(<advancedcombat:advanced_iron_sword>);
 recipes.addShaped("Master_Sword_of_Aether", <advancedcombat:advanced_iron_sword>, [
 
     [<msmlegacy:relic_infinity>, 	<ionitems:ion_sword>.marked("input_item"), 	<tp:stone_hammer>.reuse()],
-    [<minecraft:redstone_block>,    <minecraft:redstone_block>,  									<extrautils2:ingredients:2>],
-    [<minecraft:redstone_block>, 	<minecraft:redstone_block>, 									<cyclicmagic:block_anvil_magma>.reuse()]],
+    [<minecraft:redstone_block>,    <minecraft:redstone_block>,  				<extrautils2:ingredients:2>],
+    [<minecraft:redstone_block>, 	<minecraft:redstone_block>, 				<cyclicmagic:block_anvil_magma>.reuse()]],
     
     function(out, ins, crafting) {
     	var xpLevelCost = 20;
@@ -120,8 +120,8 @@ recipes.remove(<cyclicmagic:sword_ender>);
 recipes.addShaped("Master_Sword_of_Time", <cyclicmagic:sword_ender>, [
 
     [<msmlegacy:relic_pie>, 					<ionitems:ion_sword>.marked("input_item"), 	<tp:stone_hammer>.reuse()],
-    [<superblocks:packed_ender_pearls_block>,   <superblocks:packed_ender_pearls_block>,  						<superblocks:gold_superblock:7>],
-    [<superblocks:packed_ender_pearls_block>, 	<superblocks:packed_ender_pearls_block>, 						<cyclicmagic:block_anvil_magma>.reuse()]],
+    [<superblocks:packed_ender_pearls_block>,   <superblocks:packed_ender_pearls_block>,  	<superblocks:gold_superblock:7>],
+    [<superblocks:packed_ender_pearls_block>, 	<superblocks:packed_ender_pearls_block>, 	<cyclicmagic:block_anvil_magma>.reuse()]],
     
     function(out, ins, crafting) {
     	var xpLevelCost = 20;
@@ -149,8 +149,8 @@ recipes.remove(<witherskelefix:blade>);
 recipes.addShaped("Master_Sword_of_Souls", <witherskelefix:blade>, [
 
     [<msmlegacy:relic_molten>, 	<ionitems:ion_sword>.marked("input_item"), 	<tp:stone_hammer>.reuse()],
-    [<minecraft:magma>,   		<minecraft:magma>,  											<torchmaster:dread_lamp>],
-    [<minecraft:magma>, 		<minecraft:magma>, 												<cyclicmagic:block_anvil_magma>.reuse()]],
+    [<minecraft:magma>,   		<minecraft:magma>,  						<torchmaster:dread_lamp>],
+    [<minecraft:magma>, 		<minecraft:magma>, 							<cyclicmagic:block_anvil_magma>.reuse()]],
     
     function(out, ins, crafting) {
     	var xpLevelCost = 20;
@@ -178,8 +178,8 @@ recipes.remove(<cyclicmagic:sword_weakness>);
 recipes.addShaped("Master_Sword_of_Atrophy", <cyclicmagic:sword_weakness>, [
 
     [<advancedcombat:advanced_emerald_sword>, 	<ionitems:ion_sword>.marked("input_item"), 	<tp:stone_hammer>.reuse()],
-    [<minecraft:emerald_block>,  				<minecraft:emerald_block>,  									<extrautils2:simpledecorative:0>],
-    [<minecraft:emerald_block>, 				<minecraft:emerald_block>, 										<cyclicmagic:block_anvil_magma>.reuse()]],
+    [<minecraft:emerald_block>,  				<minecraft:emerald_block>,  				<extrautils2:simpledecorative:0>],
+    [<minecraft:emerald_block>, 				<minecraft:emerald_block>, 					<cyclicmagic:block_anvil_magma>.reuse()]],
     
     function(out, ins, crafting) {
     	var xpLevelCost = 20;
@@ -207,8 +207,8 @@ recipes.remove(<advancedcombat:advanced_golden_sword>);
 recipes.addShaped("Master_Sword_of_the_Mind", <advancedcombat:advanced_golden_sword>, [
 
     [<extrautils2:suncrystal>, 			<ionitems:ion_sword>.marked("input_item"), 	<tp:stone_hammer>.reuse()],
-    [<extrautils2:simpledecorative:0>,  <extrautils2:simpledecorative:0>,  								<darkutils:focus_sash>],
-    [<extrautils2:simpledecorative:0>, 	<extrautils2:simpledecorative:0>, 								<cyclicmagic:block_anvil_magma>.reuse()]],
+    [<extrautils2:simpledecorative:0>,  <extrautils2:simpledecorative:0>,  			<darkutils:focus_sash>],
+    [<extrautils2:simpledecorative:0>, 	<extrautils2:simpledecorative:0>, 			<cyclicmagic:block_anvil_magma>.reuse()]],
     
     function(out, ins, crafting) {
     	var xpLevelCost = 20;
@@ -265,8 +265,8 @@ recipes.remove(<advancedcombat:nether_star_sword>);
 recipes.addShaped("Master_Sword_of_Power", <advancedcombat:nether_star_sword>, [
 
     [<advancedcombat:advanced_diamond_sword>, 	<ionitems:ion_sword>.marked("input_item"), 	<tp:stone_hammer>.reuse()],
-    [<rhodonite:block_rhodonite>,  				<rhodonite:block_rhodonite>,  									<waystones:warp_stone>],
-    [<rhodonite:block_rhodonite>, 				<rhodonite:block_rhodonite>, 									<cyclicmagic:block_anvil_magma>.reuse()]],
+    [<rhodonite:block_rhodonite>,  				<rhodonite:block_rhodonite>,  				<waystones:warp_stone>],
+    [<rhodonite:block_rhodonite>, 				<rhodonite:block_rhodonite>, 				<cyclicmagic:block_anvil_magma>.reuse()]],
     
     function(out, ins, crafting) {
     	var xpLevelCost = 20;
