@@ -1201,10 +1201,10 @@ static blockCompression as IItemStack[][] = [
 	[<superblocks:pack_:14>,<minecraft:blaze_rod>],
 	[<superblocks:packed_blaze_rods_block>,<superblocks:pack_:14>],
 
-	// Packed Blaze Rods & Block
+	// Packed Charcoal & Block
 	[<superblocks:pack_:15>,<minecraft:coal:1>],
 	[<tp:charcoal_block>,<superblocks:pack_:15>],
-
+	
 	// Packed Rabbit Hide
 	[<superblocks:pack_:16>,<minecraft:rabbit_hide>],
 

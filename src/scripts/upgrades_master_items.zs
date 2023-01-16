@@ -232,7 +232,7 @@ recipes.addShaped("Master_Sword_of_the_Mind", <advancedcombat:advanced_golden_sw
 
 
 recipes.remove(<advancedcombat:advanced_diamond_sword>);
-<advancedcombat:advanced_diamond_sword>.displayName=  "Diamond Master Sword";
+<advancedcombat:advanced_diamond_sword>.displayName=  "Netherite Diamond Master Sword";
 recipes.addShaped("Diamond_Master_Sword", <advancedcombat:advanced_diamond_sword>, [
 
     [<carbonado:carbonado_sword>, 	<ionitems:ion_sword>.marked("input_item"), 	<tp:stone_hammer>.reuse()],

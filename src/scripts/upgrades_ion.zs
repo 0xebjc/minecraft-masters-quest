@@ -594,7 +594,7 @@ recipes.addShaped("mjolnir_worthy_throwing", <quark:pickarang>,  [
         {Slot:"mainhand",   AttributeName:"generic.reachDistance",          Amount:100.0,   Name:"generic.reachDistance",       Operation:0, UUIDMost:1 as long, UUIDLeast:1 as long},
         {Slot:"mainhand",   AttributeName:"generic.maxHealth",              Amount:100.0,   Name:"generic.maxHealth",           Operation:0, UUIDMost:1 as long, UUIDLeast:1 as long},
         {Slot:"mainhand",   AttributeName:"generic.followRange",            Amount:100.0,   Name:"generic.followRange",         Operation:0, UUIDMost:1 as long, UUIDLeast:1 as long},      
-        {Slot:"mainhand",   AttributeName:"generic.attackDamage",           Amount:25.0,    Name:"generic.attackDamage",        Operation:0, UUIDMost:1 as long, UUIDLeast:1 as long}
+        {Slot:"mainhand",   AttributeName:"generic.attackDamage",           Amount:125.0,   Name:"generic.attackDamage",        Operation:0, UUIDMost:1 as long, UUIDLeast:1 as long}
         ]};
 
         return out.withTag(map).withDisplayName("§bMjolnir Throwing Hammer (Worthy!)");
@@ -680,7 +680,7 @@ recipes.addShaped("mjolnir_worthy_throwing_charged", <quark:pickarang>,  [
         {Slot:"mainhand",   AttributeName:"generic.reachDistance",          Amount:100.0,   Name:"generic.reachDistance",       Operation:0, UUIDMost:1 as long, UUIDLeast:1 as long},
         {Slot:"mainhand",   AttributeName:"generic.maxHealth",              Amount:100.0,   Name:"generic.maxHealth",           Operation:0, UUIDMost:1 as long, UUIDLeast:1 as long},
         {Slot:"mainhand",   AttributeName:"generic.followRange",            Amount:100.0,   Name:"generic.followRange",         Operation:0, UUIDMost:1 as long, UUIDLeast:1 as long},      
-        {Slot:"mainhand",   AttributeName:"generic.attackDamage",           Amount:25.0,    Name:"generic.attackDamage",        Operation:0, UUIDMost:1 as long, UUIDLeast:1 as long}
+        {Slot:"mainhand",   AttributeName:"generic.attackDamage",           Amount:125.0,   Name:"generic.attackDamage",        Operation:0, UUIDMost:1 as long, UUIDLeast:1 as long}
         ]};
 
         return out.withTag(map).withDisplayName("§bMjolnir Throwing Hammer (Worthy!) §eCharged");

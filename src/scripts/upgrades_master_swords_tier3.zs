@@ -152,9 +152,9 @@ Anvil.addRecipe(<msmlegacy:wither_bane:*>.anyDamage(), <superblocks:avatar_stone
 recipes.remove(<msmlegacy:adminium_ark>);
 recipes.addShaped("infinity_ark", <msmlegacy:adminium_ark>, [
 
-    [<cyclicmagic:sword_slowness:*>.marked("tl"),		<advancedcombat:advanced_iron_sword:*>.marked("tm"), 	<cyclicmagic:sword_ender:*>.marked("tr")],
-    [<cyclicmagic:sword_weakness:*>.marked("ml"),  		<theeightfabledblades:arrow_slasher:*>.marked("mm"), 	<witherskelefix:blade:*>.marked("mr")],
-    [<advancedcombat:nether_star_sword:*>.marked("bl"), <advancedcombat:advanced_golden_sword:*>.marked("bm"),	<advancedcombat:advanced_nether_star_sword:*>.marked("br")]],
+    [<cyclicmagic:sword_weakness:*>.marked("tl"),           <advancedcombat:nether_star_sword:*>.marked("tm"),              <cyclicmagic:sword_ender:*>.marked("tr")],
+    [<advancedcombat:advanced_iron_sword:*>.marked("ml"),   <theeightfabledblades:arrow_slasher:*>.marked("mm"),            <cyclicmagic:sword_slowness:*>.marked("mr")],
+    [<witherskelefix:blade:*>.marked("bl"),                 <advancedcombat:advanced_nether_star_sword:*>.marked("bm"),     <advancedcombat:advanced_golden_sword:*>.marked("br")]],
     
     function(out, ins, crafting) {
     	var map as IData = {};

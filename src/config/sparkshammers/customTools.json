@@ -132,7 +132,7 @@
         "LocalisedName": "Vibranium",
         "HarvestLevel": 8,
         "Durability": 18000,
-        "Efficiency": 5.0,
+        "Efficiency": 8.0,
         "AttackDamage": 10.0,
         "Enchantability": 10,
         "TextureColour": 13217509,
@@ -141,10 +141,10 @@
     {
         "MaterialName": "giant",
         "LocalisedName": "Giant",
-        "HarvestLevel": 4,
+        "HarvestLevel": 9,
         "Durability": 16000,
-        "Efficiency": 5.0,
-        "AttackDamage": 8.0,
+        "Efficiency": 9.0,
+        "AttackDamage": 11.0,
         "Enchantability": 25,
         "TextureColour": 16777215
     },
