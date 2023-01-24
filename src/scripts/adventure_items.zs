@@ -377,3 +377,6 @@ recipes.addShapeless(<cyclicmagic:apple_lapis>, [<minecraft:apple>, <ore:gemLapi
 
 recipes.remove(<cyclicmagic:food_step>);
 recipes.addShapeless(<cyclicmagic:food_step>, [<minecraft:apple>, <minecraft:slime>]);
+
+recipes.remove(<cyclicmagic:apple_emerald>);
+recipes.addShapeless(<cyclicmagic:apple_emerald>, [<minecraft:apple>, <uncraftingtable:nugget:1>, <minecraft:gold_nugget>, <minecraft:iron_nugget>]);

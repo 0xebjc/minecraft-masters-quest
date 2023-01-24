@@ -1,4 +1,5 @@
 import mods.rockytweaks.Anvil;
+import mods.extrautils2.Crusher;
 import mods.extrautils2.Resonator;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
@@ -21,7 +22,6 @@ furnace.setFuel(<foragecraft:leek_seeds>, 100);
 
 furnace.addRecipe(<minecraft:leather>, <minecraft:rotten_flesh>, 0.35);
 furnace.addRecipe(<minecraft:deadbush>, <minecraft:sapling:*>, 1.000000);
-furnace.addRecipe(<quark:basalt>, <lavatweaks:basalt_cobblestone:*>, 0.01);
 
 // --------------------------------------------------------
 // # SMELTABLE PACKED ITEMS
@@ -74,11 +74,17 @@ recipes.addShaped(<sereneseasons:greenhouse_glass> * 4, [
 recipes.addShapeless(<minecraft:gold_block>, [<extrautils2:simpledecorative>]);
 
 
-recipes.addShapeless(<quark:basalt>, [<lavatweaks:basalt>]); 
+furnace.addRecipe(<lavatweaks:basalt>, <lavatweaks:basalt_cobblestone:*>, 0.05);
+
+<quark:basalt>.displayName= "Basalt §7(Dense)§f";
+furnace.addRecipe(<quark:basalt>, <lavatweaks:basalt>, 0.05);
+
+//recipes.addShapeless(<quark:basalt>, [<lavatweaks:basalt>]); 
+Crusher.add(<lavatweaks:basalt> * 3, <quark:basalt>, <lavatweaks:basalt_cobblestone:0> * 2, 0.50f);
+
+
 recipes.addShapeless(<extrautils2:ingredients:14> * 9, [<minecraft:dye:4>]);
 recipes.addShapeless(<minecraft:dye:1> * 9, [<minecraft:redstone>]);
-
-furnace.addRecipe(<lavatweaks:basalt>, <lavatweaks:basalt_cobblestone>, 0.05);
 
 
 recipes.addShaped(<quark:smoker>, [
